@@ -10,6 +10,16 @@ module.exports = {
       display: ['Source Serif Pro', 'Georgia', 'serif'],
       body: ['Synonym', 'system-ui', 'sans-serif'],
     },
+    colors: {
+      pearl: '#f0ead6', // Ajusta este valor al tono perlado que desees
+      green: {
+        400: '#34d399',
+        800: '#064e3b', // Define tu color verde oscuro aquí
+      },
+      zinc: {
+        100: '#f4f4f5', // Asegúrate de definir este color si lo estás utilizando
+      },
+    },
     // colors: {
     //   primary: {
     //     50: '#f8fafc',

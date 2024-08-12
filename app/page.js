@@ -11,7 +11,7 @@ export default function Home() {
               Telemedicina
               <br />
               <spam className="text-2xl lg:text-4xl">
-                Consulta Médica Online en Toda Argentina
+                Consulta Médica Online
               </spam>
             </h1>
             {/* <h2 className="text-3xl lg:text-5xl mb-4 font-bold font-heading wow animate__animated animate__fadeIn">
@@ -21,19 +21,17 @@ export default function Home() {
             </h2> */}
             <p className="text-justify pr-4">
               Reciba un tratamiento adecuado junto con exámenes, licencias y
-              certificados médicos sin salir de casa. Todo por telemedicina
-              Horario de atención: Lunes a Sábado de 08:00 a 21:00 hrs.
-              Asistencia telefónica/Whatsapp al: +56 2 3304 8603
+              certificados médicos sin salir de casa.
             </p>
           </div>
           <div className="flex  lg:justify-start sm:justify-center sm:mb-5 p-10">
             <Link href="/shifts">
-              <button className="p-3 mt-3 mr-3 bg-green-400 rounded-full shadow-2xl  hover:bg-zinc-100 hover:text-zinc-800">
+              <button className="p-3 mt-3 mr-3 bg-transparent text-white border-2 border-white rounded-full shadow-2xl hover:bg-green-800 hover:text-white">
                 Agenda una Turno
               </button>
             </Link>
             <Link href="/shifts">
-              <button className="p-3 mt-3 bg-green-400 rounded-full shadow-2xl  hover:bg-zinc-100 hover:text-zinc-800">
+            <button className="p-3 mt-3 mr-3 bg-transparent text-white border-2 border-white rounded-full shadow-2xl hover:bg-green-800 hover:text-white">
                 Nuestros Especialistas
               </button>
             </Link>
@@ -50,108 +48,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section
-        className="z-10 max-w-5xl w-full items-center justify-between lg:flex bg-blue-500  "
-        id="key-features"
-      >
-        <div className="container">
-          <div className="flex flex-wrap items-center mb-12">
-            <div className="w-full lg:w-1/2 mb-6 lg:mb-0">
-              <h2
-                className="text-4xl font-bold font-heading wow animate__animated animate__fadeIn"
-                data-wow-delay=".1s"
-              >
-                <span>Servicios de </span>
-                <br />
-                <span className="text-blue-600">Excelente </span>
-                <span>
-                  Calidad <br />
-                </span>
-              </h2>
-            </div>
-            <div className="w-full lg:w-1/2">
-              <p
-                className="lg:pl-16 text-blueGray-400 leading-loose wow animate__animated animate__fadeIn"
-                data-wow-delay=".4s"
-              >
-                Atencion Médica en la comodidad de tu Hogar
-              </p>
-            </div>
-          </div>
-          <div className="flex flex-wrap -mx-3 -mb-6">
-            <div className="w-full md:w-1/2 lg:w-1/4 px-3 mb-6">
-              <div
-                className="border border-gray-100 pt-8 px-6 pb-6  text-center rounded-xl shadow hover:shadow-lg hover-up-2 transition duration-500 wow animate__animated animate__fadeIn"
-                data-wow-delay=".3s"
-              >
-                <h3 className="mb-2 font-bold font-heading">Atencion Médica</h3>
-                <p className="text-sm text-blueGray-400">
-                  Reciba evaluación por médico general en línea y tendrá un
-                  diagnóstico, junto con un tratamiento adecuado.
-                  {/* Servicios con y sin chofer.
-                    <br />
-                    Traslados Programados.
-                    <br />
-                    Atención Domiciliaria. */}
-                </p>
-                <Link href="/">
-                  <button className="bg-green">
-                    Conectar con especialistas
-                  </button>
-                </Link>
-              </div>
-            </div>
-            <div className="w-full md:w-1/2 lg:w-1/4 px-3 mb-6">
-              <div
-                className="border border-gray-100 pt-8 px-6 pb-6  text-center rounded-xl shadow hover:shadow-lg hover-up-2 transition duration-500 wow animate__animated animate__fadeIn"
-                data-wow-delay=".7s"
-              >
-                <h3 className="mb-2 font-bold font-heading">
-                  Medicina Preventiva
-                </h3>
-                <p className="text-sm text-blueGray-400">
-                  Controles de Alcohol y Drogas.
-                  <br />
-                  Servicios Médicos-Legales.
-                  <br />
-                  Epidemiología Laboral.
-                </p>
-              </div>
-            </div>
-            <div className="w-full md:w-1/2 lg:w-1/4 px-3 mb-6">
-              <div
-                className="border border-gray-100 pt-8 px-6 pb-6  text-center rounded-xl shadow hover:shadow-lg hover-up-2 transition duration-500 wow animate__animated animate__fadeIn"
-                data-wow-delay=".9s"
-              >
-                <h3 className="mb-2 font-bold font-heading">
-                  Servicios Oil & Gas
-                </h3>
-                <p className="text-sm text-blueGray-400">
-                  Permanencia en sitio. <br />
-                  Trailer Enfermería.
-                  <br />
-                  Control de Ausentismo.
-                </p>
-              </div>
-            </div>
-            <div className="w-full md:w-1/2 lg:w-1/4 px-3 mb-6">
-              <div
-                className="border border-gray-100 pt-8 px-6 pb-6  text-center rounded-xl shadow hover:shadow-lg hover-up-2 transition duration-500 wow animate__animated animate__fadeIn"
-                data-wow-delay=".5s"
-              >
-                <h3 className="mb-2 font-bold font-heading">Eventos</h3>
-                <p className="text-sm text-blueGray-400">
-                  Deportivos.
-                  <br />
-                  Recitales.
-                  <br />
-                  Actos Públicos.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    
 
       <section
         className="z-10 max-w-5xl w-full items-center justify-between lg:flex p-10"
@@ -201,7 +98,6 @@ export default function Home() {
             </h2>
           </div>
           <div className="">
-
             <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
               <Image
                 class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
@@ -276,7 +172,6 @@ export default function Home() {
                 </figcaption>
               </div>
             </figure>
-
           </div>
         </div>
       </section>
