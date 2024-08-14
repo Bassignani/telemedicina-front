@@ -1,44 +1,46 @@
 import React from "react";
-import Link from "next/link"
+import Link from "next/link";
 import Image from "next/image";
 
 const Footer = () => {
     return (
         <>
-            <section className="py-10">
+            <section className="py-10 bg-green-500 text-gray-800"> {/* Cambia el color de fondo si es necesario */}
                 <div className="container px-4 mx-auto wow animate__animated animate__fadeIn" data-wow-delay=".3s">
-                    <div className="flex flex-wrap mb-12 lg:mb-30 -mx-3 text-center lg:text-left">
-                        <div className="w-full lg:w-1/5 px-3 mb-6 lg:mb-0">
-                            <Link href="/" className="inline-block mx-auto lg:mx-0 text-3xl font-semibold leading-none">
-                                
-                                    <Image className="h-20" src="/images/logos/Logo.jpg" alt="Telemedicina" width={70} height={30}/>
-                                
-                            </Link>
-                        </div>
-                        <div className="w-full lg:w-2/5 px-3 py-10 mb-8 lg:mb-0">
-                            <p className="max-w-md mx-auto lg:max-w-full lg:mx-0 lg:pr-32 lg:text-lg text-blueGray-400 leading-relaxed">
-                                Servicios de <strong>Emergencia</strong> 24/7
+                    {/* Sección de llamada a la acción */}
+                    <div className="flex flex-col items-center mb-12">
+                        <div className="text-center mb-6">
+                            <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-800">
+                                ¡No Esperes Más!
+                            </h2>
+                            <p className="text-lg font-medium text-customWhite">
+                                Únete a nuestra plataforma y empieza a recibir atención médica de calidad desde la comodidad de tu hogar.
                             </p>
                         </div>
-                        <div className="w-full lg:w-1/5 px-3 mb-8 lg:mb-0">
-                            <p className="mb-2 lg:mb-4 lg:text-lg font-bold font-heading text-blueGray-800">Oficina</p>
-                            <p className="lg:text-lg text-blueGray-400">Neuquén, Argentina.</p>
-                        </div>
-                        <div className="w-full lg:w-1/5 px-3">
-                            <p className="mb-2 lg:mb-4 lg:text-lg font-bold font-heading text-blueGray-800">Contacto</p>
-                            <p className="lg:text-lg text-blueGray-400">299-111222333</p>
-                            <p className="lg:text-lg text-blueGray-400"></p>
-                        </div>
+
+                        <Link href="/shifts">
+              <button className="p-3 mt-3 mr-3 bg-green-800 text-customWhite border-2 border-customWhite rounded-full shadow-2xl hover:bg-customWhite hover:text-green-800">
+                Agendar Turno
+              </button>
+            </Link>
                     </div>
-                    <div className="flex flex-col lg:flex-row items-center lg:justify-between">
-                        <p className="text-sm text-blueGray-400">
-                            &copy; {new Date().getFullYear()}. All rights reserved. Designed by{" "}
-                            <Link className="text-blue-400" href="https://limaydev.com.ar" target="_blank">
-                                limaydev.com.ar
-                            
+
+                    {/* Información del Footer */}
+                    <div className="flex flex-wrap items-center justify-between">
+                        <div className="w-full lg:w-1/3 flex items-center mb-6 lg:mb-0">
+                            <Link href="/" className="flex items-center">
+                                <Image className="h-20 rounded-full" src="/images/logos/telemedicine_logo_transparent.png" alt="Telemedicina" width={70} height={70} />
                             </Link>
-                        </p>
-                    
+                        </div>
+
+                        <div className="w-full lg:w-2/3 text-center lg:text-right">
+                            <p className="text-sm text-gray-600">
+                                &copy; {new Date().getFullYear()}. Todos los derechos reservados. Diseñado por{" "}
+                                <Link className="text-blue-400" href="https://limaydev.com.ar" target="_blank">
+                                    limaydev.com.ar
+                                </Link>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>

@@ -12,10 +12,16 @@ module.exports = {
     },
     colors: {
       pearl: '#f0ead6', // Ajusta este valor al tono perlado que desees
+      customWhite: '#F5F5F5', 
       green: {
         400: '#34d399',
         800: '#064e3b', // Define tu color verde oscuro aquí
+        
       },
+      gray: {
+        800: '#2d3748', // Puedes ajustar este valor si es necesario
+      },
+    
       zinc: {
         100: '#f4f4f5', // Asegúrate de definir este color si lo estás utilizando
       },
