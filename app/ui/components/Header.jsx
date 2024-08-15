@@ -36,7 +36,7 @@ const Header = ({ handleHidden }) => {
                             </Link>
                         </li>
                         <li className="pt-4 pb-4">
-                            <Link href="/specialties" className="text-lg font-semibold text-blueGray-600 hover:text-blueGray-500">
+                            <Link href="/shifts" className="text-lg font-semibold text-blueGray-600 hover:text-blueGray-500">
                                 Agendar Turno
                             </Link>
                         </li>

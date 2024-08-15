@@ -10,7 +10,7 @@ export default function Home() {
       <section className="z-10 max-w-5xl w-full items-center justify-between lg:flex lg:pt-10 pb-10 bg-white"> {/* Fondo sólido blanco */}
         <div className="ml-2 left-0 top-0">
           <div>
-            <h1 className="text-3xl lg:text-5xl mb-4 font-bold text-gray-800">
+            <h1 className="text-3xl lg:text-5xl mb-4 font-bold text-customWhite">
               Servicio Médico <span className="online-effect">Online</span>
             </h1>
             <p className="text-justify pr-4 text-gray-600">
@@ -19,12 +19,12 @@ export default function Home() {
           </div>
           <div className="flex lg:justify-start sm:justify-center sm:mb-5 p-10">
             <Link href="/shifts">
-              <button className="p-3 mt-3 mr-3 bg-transparent text-white border-2 border-white rounded-full shadow-2xl hover:bg-green-800 hover:text-white">
+              <button className="p-3 mt-3 mr-3 bg-transparent text-customWhite border-2 border-white rounded-full shadow-2xl hover:bg-green-800 hover:text-white">
                 Agendar Turno
               </button>
             </Link>
             <Link href="/shifts">
-              <button className="p-3 mt-3 mr-3 bg-transparent text-white border-2 border-white rounded-full shadow-2xl hover:bg-green-800 hover:text-white">
+              <button className="p-3 mt-3 mr-3 bg-transparent text-customWhite border-2 border-white rounded-full shadow-2xl hover:bg-green-800 hover:text-white">
                 Especialidades
               </button>
             </Link>
